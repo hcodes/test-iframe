@@ -20,10 +20,14 @@
         }, 500);
       
       
-      var iframe1 = document.querySelector('iframe');
-      var iframe2 = iframe1.contentWindow.document.querySelector('iframe');
-      var iframe3 = iframe2.contentWindow.document.querySelector('iframe');
     </script>
     <iframe src="./iframe1.html" width="100%" height="700"></iframe>
+  <script>
+    window.addEventListener('load', function() {
+        window.iframe1 = document.querySelector('iframe');
+        window.iframe2 = iframe1.contentWindow.document.querySelector('iframe');
+        window.iframe3 = iframe2.contentWindow.document.querySelector('iframe');
+    });
+  </script>
 </body>
 </html>
