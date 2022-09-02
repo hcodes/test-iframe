@@ -31,6 +31,26 @@
         window.iframeInput2 = iframe2.contentWindow.document.querySelector('input');
         window.iframe3 = iframe2.contentWindow.document.querySelector('iframe');
         window.iframeInput3 = iframe3.contentWindow.document.querySelector('input');
+      
+      function setFocusOnIframe(iframe) {
+        var input = iframe.contentWindow.document.createElement('input');
+        input.type = 'text';
+        iframe.contentWindow.document.appendChild(input);
+        input.focus();
+        iframe.contentWindow.document.removeChild(input);
+      }
+      
+      window.setFocusOnIframe1 = function() {
+        setFocusOnIframe(iframe1);
+      }
+      
+      window.setFocusOnIframe2 = function() {
+        setFocusOnIframe(iframe2);
+      }      
+      
+      window.setFocusOnIframe3 = function() {
+        setFocusOnIframe(iframe3);
+      }            
     });
   </script>
 </body>
