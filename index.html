@@ -26,8 +26,11 @@
   <script>
     window.addEventListener('load', function() {
         window.iframe1 = document.querySelector('iframe');
+        window.iframeInput1 = iframe1.contentWindow.document.querySelector('input');
         window.iframe2 = iframe1.contentWindow.document.querySelector('iframe');
+        window.iframeInput2 = iframe2.contentWindow.document.querySelector('input');
         window.iframe3 = iframe2.contentWindow.document.querySelector('iframe');
+        window.iframeInput3 = iframe2.contentWindow.document.querySelector('input');
     });
   </script>
 </body>
