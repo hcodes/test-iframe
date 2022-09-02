@@ -35,9 +35,10 @@
       function setFocusOnIframe(iframe) {
         var input = iframe.contentWindow.document.createElement('input');
         input.type = 'text';
-        iframe.contentWindow.document.appendChild(input);
+        var body = iframe.contentWindow.document.body;
+        body.appendChild(input);
         input.focus();
-        iframe.contentWindow.document.removeChild(input);
+        body.removeChild(input);
       }
       
       window.setFocusOnIframe1 = function() {
