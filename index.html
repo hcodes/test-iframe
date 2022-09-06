@@ -22,6 +22,8 @@
     </script>
     <iframe src="https://vvideo.github.io/test-iframe/iframe1.html?r=3" width="100%" height="700" onload="this.focus()"></iframe>
   <script>
+    var iframe = document.querySelector('iframe');
+    iframe.focus();
     window.addEventListener('load', function() {
 //         window.iframe1 = document.querySelector('iframe');
 //         window.iframeInput1 = iframe1.contentWindow.document.querySelector('input');
