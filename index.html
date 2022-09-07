@@ -8,7 +8,7 @@
     <h1>Top page</h1>
     <div id="focus"></div>
     <div id="keys"></div>
-  <input type="button" value="Hello" />
+  <input type="input" value="" />
     <script>
         document.addEventListener('keydown', function(e) {
             var keys = document.querySelector('#keys')
@@ -20,7 +20,7 @@
             focus.innerHTML = document.activeElement ? document.activeElement.tagName : document.activeElement;
         }, 500);
     </script>
-    <iframe src="https://vvideo.github.io/test-iframe/iframe1.html?r=5" width="100%" height="700" allow="focus-without-user-activation *" sandbox="allow-forms allow-same-origin allow-scripts"></iframe>
+    <iframe src="https://vvideo.github.io/test-iframe/iframe1.html?r=6" width="100%" height="700" allow="focus-without-user-activation *" sandbox="allow-forms allow-same-origin allow-scripts"></iframe>
   <script>
     var iframe = document.querySelector('iframe');
     iframe.focus();
